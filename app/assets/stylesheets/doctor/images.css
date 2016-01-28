@@ -1,0 +1,17 @@
+#doctor-images {
+  vertical-align: top;
+}
+
+#doctor-images li {
+  width:33.33%;
+  float:left;
+  .caption {display: block}
+}
+
+.caption p {
+  margin-left: 2px;
+}
+
+.error {
+  color:red;
+}

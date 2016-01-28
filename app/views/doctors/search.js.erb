@@ -1,0 +1,7 @@
+<% if @doctors.present? %>
+  $('#profile-list').html('<%= j render 'profiles', doctors: @doctors %>');
+  $('.error').empty();
+<% else %>
+  $('.error').html('no doctors found');
+  $('#profile-list #doctor-list').remove();
+<% end %>

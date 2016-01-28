@@ -1,0 +1,11 @@
+#doctor-list
+  .row
+    %ul{id: 'doctor-images'}
+      .images
+        - doctors.each do |doctor|
+          - profile = doctor['profile']
+          %li
+            .row
+              = image_tag profile['image_url']
+              %span.caption
+                %p= "#{profile['first_name']} #{profile['last_name']}"
